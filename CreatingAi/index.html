@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat App</title>
+	<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head><body>
+	<div class="chatbot-container">
+		<div class="chatbot-header">
+			<h2>SMIT Admission Chatbot </h2>
+            <p id="para"><i class="fa-solid fa-ellipsis-vertical" id="threeDots"></i></p>
+			<div class="dlte">
+				<button id="deleteAll">Delete Chat</button>
+			</div>
+		</div>
+		<div class="chatbot-messages">
+			<ul id="list">
+             <!--   <li class="rightside">hello jjjs wjwjwj wjwjjw</li>
+                <li class="leftside">hru</li>-->
+               
+            </ul>
+		</div>
+        <div class="spinner" aria-busy="true" id="typing">
+			<span class="bubble1"></span>
+			<span class="bubble2"></span>
+			<span class="bubble3"></span>
+		  </div>
+		<div class="chatbot-input-container">
+            
+		  <div class="input-box">
+            <input type="text" placeholder="Type a message..." id="textInput" class="chatbot-input">
+			<button id="sendBtn" class="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
+<script src="./app.js"></script>
+</html>
